@@ -50,7 +50,7 @@ session_start();
         },
       theme: true,
       header: {
-        left: 'prev, next /*today*/ ',
+        left: 'prev, today next',
         center: 'title',
         right: 'month, botonSig /*agendaDay*/'
       },
