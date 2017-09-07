@@ -52,7 +52,7 @@ session_start();
       header: {
         left: 'prev, today next',
         center: 'title',
-        right: 'month, botonSig /*agendaDay*/'
+        right: 'month, /*botonSig*/ agendaWeek agendaDay'
       },
       views: {
             month: { // name of view
