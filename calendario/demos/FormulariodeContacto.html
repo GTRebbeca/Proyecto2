@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta  content="text/html" charset="utf-8"/>
+	<title>Registro de usuarios</title>
+	<!--Iniciamo nuestro JS-->
+<script>
+	function evento_onload(){
+		alert("Bienvenido a Nuestro Formulario de Registro de Usuarios.");
+	}
+
+	function evento_onclick(){
+		alert("Los datos han sido enviados correctamente.");
+	}
+
+	function evento_onfocus(elemento) {
+		elemento.style.background= "#CCCCCC";
+	}
+
+	function evento_oncopy(){
+		alert("El Texto ha sido copiado");
+	}
+</script>
+
+
+</head>
+<body >
+	<h4>Formulario de Registor de Usuarios</h4>
+
+	<table>
+		<form id="formulario">
+			<tr>
+				<td><label>Nombre:</label></td>
+				<td><input id="nombres" type="text" name="nombres" onfocus="evento_onfocus(this)"></td>
+			</tr>
+			<tr>
+				<td><label>Apellidos:</label></td>
+				<td><input id="apellidos" type="text" name="apellidos" onfocus="evento_onfocus(this)"></td>
+			</tr>
+			<tr>
+				<td><label>Cuenta:</label></td>
+				<td><select id="cuenta" name="cuenta">
+						<option name="" value=""></option>
+						<option name="cuenta 1" value="cuenta 1">Cuenta 1</option>
+						<option name="cuenta 2" value="cuenta 2">Cuenta 2</option>
+					</select></td>
+			</tr>
+			<tr> 
+				<td><label>Titulo</label></td>
+				<td><input id="titulo" type="text" name="titulo" oncopy="evento_oncopy()"></td>
+			</tr>
+		
+			<tr> 
+				<td><label>Departamento</label></td>
+				<td><input id="departamento" type="text" name="departamento" oncopy="evento_oncopy()"></td>
+			</tr>
+			<tr>
+				<td><label>Fecha de Nacimiento:</label></td>
+				<td><input type="date" ></td>
+			</tr>
+			<tr>
+				<td><label>Supervisor</label></td>
+				<td><select id="supervisor" name="supervisor">
+						<option name="" value=""></option>
+						<option name="supervisor 1" value="supervisor 1">Supervisor 1</option>
+						<option name="supervisor 2" value="supervisor 2">Supervisor 2</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td><label>Origen del prospecto</label></td>
+				<td><select id="Oprospecto" name="Oprospecto">
+						<option name="" value=""></option>
+						<option name="web" value="web">Web 1</option>
+						<option name="partnerR" value="partnerR 2">Partner Referral</option>
+						<option name="purcharsedL" value="purcharsedL">Purcharsed List</option>
+						<option name="other" value="other">Other</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td><label>Telefono:</label></td>
+				<td><input id="telefono" type="text" name="telefono"></td>
+			</tr>
+			<tr>
+				<td><label>Telefono Particular</label></td>
+				<td><input id="telefonoP" type="text" name="telefonoP"></td>
+			</tr>
+			<tr>
+				<td><label>Celular</label></td>
+				<td><input id="celular" type="text" name="celular"></td>
+			</tr>
+			<tr>
+				<td><label>Otro Telefono</label></td>
+				<td><input id="Otelefono" type="text" name="Otelefono"></td>
+			</tr>
+			<tr>
+				<td><label>Fax</label></td>
+				<td><input id="fax" type="text" name="fax"></td>
+			</tr>
+			<tr>
+				<td><label>Email:</label></td>
+				<td><input id="email" type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td><label>Ayudante</label></td>
+				<td><input id="ayudante" type="text" name="ayudante" onfocus="evento_onfocus(this)"></td>
+			</tr>
+			<tr>
+				<td><label>Telefono del ayudante</label></td>
+				<td><input id="telefonoA" type="text" name="telefonoA"></td>
+			</tr>
+			<tr>
+				<td><label>Direccion:</label></td>
+				<td><label>Calle de correo</label></td>
+				<td><input id="calle" type="text" name="calle"></td>
+				<td><label>Ciudad de correo</label></td>
+				<td><input id="ciudad" type="text" name="ciudad"></td>
+			</tr>
+			<tr>
+				<td><label> </label></td>
+				<td><label>Estado o Provincia de correo</label></td>
+				<td><input id="edopro" type="text" name="edopro"></td>
+				<td><label>Codigo Postal de correo</label></td>
+				<td><input id="cp" type="text" name="cp"></td>
+				<td><label>Ciudad de correo</label></td>
+				<td><input id="ciudad" type="text" name="ciudad"></td>
+			</tr>
+			<tr>
+				<td><input id="enviar" type="submit" name="enviar" value="Enviar" onclick="evento_onclick()"></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>
